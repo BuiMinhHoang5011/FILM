@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Cairo", sans-serif;
+}
+/* --------------------BACJGROUND---------------------- */
+.wrapper{
+    background-image: url(image/Backgroundlogin.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+.wrapper::before{
+    content: "";
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.none{
+    height: 100px;
+}
+.login-form{
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 500px;
+    margin-left: 50%;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    /* padding-top: 40; */
+}
+.login-form h2{
+    font-size: 32px;
+    color: #fff;
+    margin-top: 0;
+}
+.login-form input{
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: #fff;
+    background: #333;
+    border: 1px solid #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+.input-wrap{
+    margin-bottom: 25px;
+}
+.login-form button{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background: #e50914;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #e50914;
+    cursor: pointer;
+}
+.login-form button:hover{
+    background: #df212b8e;
+}
+.remmber{
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.remmber input{
+    width: 15px;
+    height: 15px;
+}
+.remmber .register a{
+    color: #fff;
+}
+.support{
+    display: flex;
+    align-items: center;
+}
+.support span{
+    margin-right: 10px;
+    height: 25px;
+}
